@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bachelor_cap_image"
+        android:layout_width="175dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Introduction1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bachelor_cap_text"
+        app:srcCompat="@drawable/haksamo"/>
+
+    <TextView
+        android:id="@+id/bachelor_cap_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:scrollbarSize="?android:attr/scrollbarSize"
+        android:text="학사모"
+        android:textAllCaps="true"
+        android:textColor="#452591"
+        android:textColorHighlight="@color/purple_700"
+        android:textColorHint="@color/purple_700"
+        android:textColorLink="@color/purple_700"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/bachelor_cap_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Introduction1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="20dp"
+        android:text="학교"
+        android:textColor="#452591"
+        app:layout_constraintEnd_toStartOf="@+id/Introduction2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bachelor_cap_image" />
+
+    <TextView
+        android:id="@+id/Introduction2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:text="에서"
+        android:textColor="#BAB6B6"
+        app:layout_constraintEnd_toStartOf="@+id/Introduction3"
+        app:layout_constraintStart_toEndOf="@+id/Introduction1"
+        app:layout_constraintTop_toBottomOf="@+id/bachelor_cap_image" />
+
+    <TextView
+        android:id="@+id/Introduction3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="사랑"
+        android:textColor="#FF0505"
+        app:layout_constraintEnd_toStartOf="@+id/Introduction4"
+        app:layout_constraintStart_toEndOf="@+id/Introduction2"
+        app:layout_constraintTop_toBottomOf="@+id/bachelor_cap_image" />
+
+    <TextView
+        android:id="@+id/Introduction4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="172dp"
+        android:text="을 찾고 싶은 사람들"
+        android:textColor="#BAB6B6"
+        app:layout_constraintBottom_toTopOf="@+id/id_getinput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Introduction3"
+        app:layout_constraintTop_toBottomOf="@+id/bachelor_cap_image"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/id_getinput"
+        android:layout_width="160dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction3" />
+
+    <TextView
+        android:id="@+id/id_text_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="21dp"
+        android:text="아이디 \u003A"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/password_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction1" />
+
+    <EditText
+        android:id="@+id/password_getinput"
+        android:layout_width="154dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_getinput"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 \u003A"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_getinput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_text_m" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="281dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="17dp"
+        android:text="로그인 하기"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/membership_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_Save_checkBox" />
+
+    <Button
+        android:id="@+id/membership_button"
+        android:layout_width="281dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="84dp"
+        android:text="회원가입 하기"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <CheckBox
+        android:id="@+id/id_Save_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="20dp"
+        android:text="아이디 저장"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toStartOf="@+id/login_Save_checkBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_getinput"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <CheckBox
+        android:id="@+id/login_Save_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="30dp"
+        android:text="자동 로그인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_Save_checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/id_getinput" />
+</androidx.constraintlayout.widget.ConstraintLayout>
