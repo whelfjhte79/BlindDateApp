@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "988527042728",
+    "project_id": "blinddate-28699",
+    "storage_bucket": "blinddate-28699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988527042728:android:d57c43a271a43fa100e29d",
+        "android_client_info": {
+          "package_name": "blind.date.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988527042728-mqhqgbkdghj145rccn94ba6sqjsvnrcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7smVRe5jqZU0WcKIrViRBq2Pq08hhWn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988527042728-mqhqgbkdghj145rccn94ba6sqjsvnrcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
