@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MembershipScreen">
+
+    <TextView
+        android:id="@+id/password_text_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="24dp"
+        android:text="비밀번호"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/password_getinput_m"
+        app:layout_constraintStart_toStartOf="@+id/password_getinput_m"
+        app:layout_constraintTop_toBottomOf="@+id/id_getinput_m" />
+
+    <TextView
+        android:id="@+id/membership_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="572dp"
+        android:text="회원가입"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/next_membership3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/go_back_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nickname_getinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint=" ex) 코코, 공대생 등"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/id_text_m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_text" />
+
+    <EditText
+        android:id="@+id/id_getinput_m"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:hint=" 아이디 입력"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/password_text_m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_text_m" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="25dp"
+        android:text="닉네임"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nickname_getinput"
+        app:layout_constraintStart_toStartOf="@+id/go_back_main"
+        app:layout_constraintTop_toBottomOf="@+id/go_back_main" />
+
+    <TextView
+        android:id="@+id/id_text_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="아이디"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_getinput_m"
+        app:layout_constraintStart_toStartOf="@+id/id_getinput_m"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_getinput" />
+
+    <EditText
+        android:id="@+id/password_getinput_m"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint=" 비밀번호 (8자리 이상, 숫자 + 영문 조합)"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/password_getinput_m_R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_text_m" />
+
+    <EditText
+        android:id="@+id/password_getinput_m_R"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="85dp"
+        android:ems="10"
+        android:hint=" 비밀번호 확인"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/next_membership3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_getinput_m" />
+
+    <Button
+        android:id="@+id/next_membership3"
+        android:layout_width="336dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        android:text="다음"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/membership_text" />
+
+    <Button
+        android:id="@+id/go_back_main"
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="14dp"
+        android:text="&lt;"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/nickname_text"
+        app:layout_constraintEnd_toStartOf="@+id/membership_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
